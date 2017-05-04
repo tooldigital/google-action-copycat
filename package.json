@@ -1,0 +1,20 @@
+{
+	"name": "google-action-copycat",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"deploy": "gcloud --project=g-action-copycat beta functions deploy copycat --local-path=./ --trigger-http --stage-bucket=g-action-copycat",
+		"logs": "gcloud --project=g-action-copycat beta functions logs read"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/tooldigital/google-action-copycat.git"
+	},
+	"author": "Josh Beckwith <josh@positlabs.com> (https://github.com/positlabs)",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/tooldigital/google-action-copycat/issues"
+	},
+	"homepage": "https://github.com/tooldigital/google-action-copycat#readme"
+}
